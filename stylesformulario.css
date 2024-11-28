@@ -1,0 +1,114 @@
+/* Reset básico: elimina márgenes, paddings y define el modelo de caja */
+* 
+{
+    margin: 0; /* Elimina cualquier margen predeterminado en todos los elementos */
+    padding: 0; /* Elimina cualquier relleno predeterminado en todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto totales */
+}
+
+
+/* Estilo base para el cuerpo del documento */
+body 
+{
+    font-family: Arial, sans-serif; /* Define la fuente principal del documento */
+    background-color: #EBC75E; /* Aplica un color de fondo claro al cuerpo */
+    padding: 20px; /* Agrega espacio interno alrededor del contenido del cuerpo *
+}
+
+/* Contenedor principal del formulario */
+.form-container 
+{
+    max-width: 500px; /* Define un ancho máximo para el contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    background-color: #fff; /* Establece un fondo blanco para el contenedor */
+    padding: 20px; /* Agrega espacio interno alrededor del contenido */
+    border-radius: 8px; /* Aplica esquinas redondeadas al contenedor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra para un efecto de elevación */
+}
+
+/* Títulos principales */
+h1 
+{
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 20px; /* Agrega espacio debajo del título */
+    color: #333; /* Cambia el color del texto a gris oscuro */
+}
+
+/* Estilo general para los formularios */
+form 
+{
+    display: flex; /* Habilita el modelo de caja flexible */
+    flex-direction: column; /* Apila los elementos hijos verticalmente */
+}
+
+/* Etiquetas para campos de formulario */
+label 
+{
+    margin-bottom: 5px; /* Añade espacio debajo de las etiquetas */
+    font-weight: bold; /* Hace que el texto de las etiquetas sea negrita */
+    color: #A1A1A1; /* Aplica un color gris medio a las etiquetas */
+}
+
+/* Campos de entrada, área de texto y menús desplegables */
+input[type="text"], textarea, select 
+{
+    width: 100%; /* Ocupan el 100% del ancho del contenedor padre */
+    padding: 10px; /* Agrega espacio interno para los campos */
+    margin-bottom: 15px; /* Añade espacio debajo de los campos */
+    border: 1px solid #ccc; /* Aplica un borde gris claro */
+    border-radius: 4px; /* Redondea ligeramente las esquinas */
+}
+
+/* Entradas de radio y casillas de verificación */
+input[type="radio"], input[type="checkbox"] 
+{
+    margin-left: 15px;
+    margin-right: 5px; /* Agrega espacio a la derecha del control */
+}
+
+/* Estilo para los fieldsets del formulario */
+fieldset 
+{
+    text-align-last: 10px;
+    margin-bottom: 15px; /* Añade espacio debajo del fieldset */
+    border:  none; /* Define un borde gris claro */
+    padding: 5px; /* Agrega espacio interno */
+}
+
+/* Estilo para las leyendas dentro de los fieldsets */
+legend 
+{
+    font-weight: bold; /* Aplica negrita al texto */
+    color: #333; /* Cambia el color del texto a gris oscuro */
+}
+
+/* Botones en el formulario */
+button 
+{
+    background-color: #007BFF; /* Establece un color azul para el fondo */
+    color: #fff; /* Cambia el color del texto a blanco */
+    padding: 10px; /* Agrega espacio interno */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 4px; /* Redondea ligeramente las esquinas */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+
+}
+
+/* Estilo del botón al pasar el cursor */
+button:hover 
+{
+    background-color: #0056b3; /* Oscurece el fondo del botón al pasar el cursor */
+}
+div
+{
+     font-weight: bold;
+    color: #A1A1A1;
+}
+.radio-group label, .checkbox-group label
+{
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: bold;
+
+}
